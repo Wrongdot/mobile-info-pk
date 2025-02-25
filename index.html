@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Info - Your Guide to Smartphones</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1>Mobile Info</h1>
+            <p>Your guide to the latest smartphones</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for phones, brands, or features...">
+                <button onclick="searchPhones()">Search</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#phones">Phones</a>
+                    <ul class="dropdown">
+                        <li><a href="#latest">Latest Phones</a></li>
+                        <li><a href="#popular">Popular Phones</a></li>
+                        <li><a href="#budget">Budget Phones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#compare">Compare</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Mobile Info</h2>
+            <p>Discover the latest and greatest in smartphone technology. Compare features, prices, and more!</p>
+        </section>
+
+        <!-- List Button -->
+        <button class="list-button" onclick="toggleList()">Show List</button>
+
+        <!-- Featured Phones Section -->
+        <section id="phones">
+            <h2>Featured Phones</h2>
+            <div class="phone-grid">
+                <div class="phone">
+                    <a href="phone-a.html">
+                        <img src="images/product1.jpg" alt="Samsung A32">
+                        <h3>Samsung A32</h3>
+                        <p><strong>Features:</strong> 6.5-inch display, 128GB storage, 5000mAh battery.</p>
+                    </a>
+                </div>
+                <div class="phone">
+                    <a href="phone-b.html">
+                        <img src="images/product11.jpg" alt="iPhone 16">
+                        <h3>iPhone 16</h3>
+                        <p><strong>Features:</strong> 6.1-inch display, 256GB storage, 4500mAh battery.</p>
+                    </a>
+                </div>
+                <div class="phone">
+                    <a href="phone-c.html">
+                        <img src="images/product2.jpg" alt="Samsung Galaxy S24">
+                        <h3>Samsung Galaxy S24</h3>
+                        <p><strong>Features:</strong> 6.7-inch AMOLED display, 512GB storage, 6000mAh battery.</p>
+                    </a>
+                </div>
+                <div class="phone">
+                    <a href="phone-d.html">
+                        <img src="images/product3.jpg" alt="Samsung A16">
+                        <h3>Samsung A16</h3>
+                        <p><strong>Features:</strong> 6.3-inch OLED display, 128GB storage, 4000mAh battery.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updated Comparison Tool Section -->
+        <section id="compare">
+            <h2>Compare Phones</h2>
+            <div class="comparison-tool">
+                <select id="phone1">
+                    <option value="Samsung A32">Samsung A32</option>
+                    <option value="IPhone 16">iPhone 16</option>
+                    <option value="Samsung Galaxy S24">Samsung Galaxy S24</option>
+                    <option value="Samsung A16">Samsung A16</option>
+                </select>
+                <select id="phone2">
+                    <option value="Samsung A32">Samsung A32</option>
+                    <option value="IPhone 16">iPhone 16</option>
+                    <option value="Samsung Galaxy S24">Samsung Galaxy S24</option>
+                    <option value="Samsung A16">Samsung A16</option>
+                </select>
+                <button onclick="comparePhones()">Compare</button>
+            </div>
+            <div id="comparison-result"></div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <h2>Latest Mobile News</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <h3>New iPhone 15 Released</h3>
+                    <p>Apple unveils the iPhone 15 with a titanium body and USB-C charging.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="news-item">
+                    <h3>Samsung Galaxy S24 Rumors</h3>
+                    <p>Leaks suggest the Galaxy S24 will feature a 200MP camera.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="news-item">
+                    <h3>Xiaomi Launches Foldable Phone</h3>
+                    <p>Xiaomi enters the foldable market with the Mi Mix Fold 3.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Mobile Info, we are passionate about connecting you with the latest smartphone innovations. Our platform is designed to offer in-depth reviews, comparisons, and updates on top mobile brands and their products.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us at <a href="mailto:info@mobileinfo.com">info@mobileinfo.com</a>.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#terms-of-service">Terms of Service</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <div class="social-media">
+            <a href="#facebook"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#twitter"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2025 Mobile Info. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="mobile.js"></script>
+    <script src="comparephone.js"></script>
+</body>
+</html>
